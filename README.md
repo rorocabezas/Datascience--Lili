@@ -40,7 +40,7 @@ El sistema maneja las siguientes entidades principales:
 ### 🔗 Diagrama Entidad-Relación (MER)
 
 Puedes ver el diagrama completo del modelo de datos aquí:
-**[Ver Diagrama MER en dbdiagram.io](https://dbdiagram.io/d/TU_ENLACE_AQUI)**
+**[Ver Diagrama MER en dbdiagram.io](https://dbdiagram.io/d/685b59a0f413ba3508b88477))**
 
 ![Diagrama MER](docs/database-diagram.png)
 
@@ -54,7 +54,7 @@ Puedes ver el diagrama completo del modelo de datos aquí:
 
 1. Clona este repositorio:
 ```bash
-git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/rorocabezas/Datascience--Lili.git)
 cd TU_REPOSITORIO
 ```
 
