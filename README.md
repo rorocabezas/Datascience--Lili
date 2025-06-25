@@ -54,7 +54,7 @@ Puedes ver el diagrama completo del modelo de datos aquí:
 
 1. Clona este repositorio:
 ```bash
-git clone [https://github.com/TU_USUARIO/TU_REPOSITORIO.git](https://github.com/rorocabezas/Datascience--Lili.git)
+git clone https://github.com/rorocabezas/Datascience--Lili.git
 cd TU_REPOSITORIO
 ```
 
