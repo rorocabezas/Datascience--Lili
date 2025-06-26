@@ -1,46 +1,46 @@
 # Aplicación de Gestión de Productos y Órdenes
 
-Una aplicación web desarrollada con Streamlit para la gestión de productos y órdenes desde la API de Jumpseller.
+Una aplicación web desarrollada con Streamlit para la gestión de productos, clientes y órdenes desde la API de Jumpseller.
 
 ## 📋 Descripción
 
 Esta aplicación permite:
-- Conectar con la API de Jumpseller
-- Crear y gestionar una base de datos SQLite local
-- Cargar productos y órdenes desde la API
-- Visualizar los datos en tablas interactivas
-- Consultar información de diferentes entidades
+- Conectar con la API de Jumpseller.
+- Crear y gestionar una base de datos SQLite local.
+- Cargar productos, clientes y órdenes desde la API.
+- Visualizar los datos en tablas interactivas y galerías.
+- Consultar información de diferentes entidades.
 
 ## 🛠️ Tecnologías Utilizadas
 
 - **Python 3.12**
-- **Streamlit** - Framework para la interfaz web
-- **SQLite** - Base de datos local
-- **Pandas** - Manipulación de datos
-- **Requests** - Llamadas a la API
+- **Streamlit** - Framework para la interfaz web.
+- **SQLite** - Base de datos local.
+- **Pandas** - Manipulación de datos.
+- **Requests** - Llamadas a la API.
 
 ## 📊 Modelo de Base de Datos
 
 El sistema maneja las siguientes entidades principales:
 
 ### Módulo de Productos
-- **Products**: Información principal de productos
-- **Categories**: Categorías de productos
-- **Images**: Imágenes de productos
-- **Variants**: Variantes de productos (diferentes precios, stock, etc.)
-- **Options**: Opciones específicas de cada variante
+- **Products**: Información principal de productos.
+- **Categories**: Categorías de productos.
+- **Images**: Imágenes de productos.
+- **Variants**: Variantes de productos (diferentes precios, stock, etc.).
+- **Options**: Opciones específicas de cada variante.
 
-### Módulo de Órdenes  
-- **Orders**: Información principal de órdenes
-- **Customers**: Datos de clientes
-- **ShippingAddresses**: Direcciones de envío
-- **BillingAddresses**: Direcciones de facturación
-- **OrderProducts**: Productos incluidos en cada orden
+### Módulo de Órdenes
+- **Orders**: Información principal de órdenes.
+- **Customers**: Datos de clientes.
+- **ShippingAddresses**: Direcciones de envío.
+- **BillingAddresses**: Direcciones de facturación.
+- **OrderProducts**: Productos incluidos en cada orden.
 
 ### 🔗 Diagrama Entidad-Relación (MER)
 
 Puedes ver el diagrama completo del modelo de datos aquí:
-**[Ver Diagrama MER en dbdiagram.io](https://dbdiagram.io/d/685b59a0f413ba3508b88477))**
+**[Ver Diagrama MER en dbdiagram.io](https://dbdiagram.io/d/685b59a0f413ba3508b88477)**
 
 ![Diagrama MER](docs/database-diagram.png)
 
@@ -86,6 +86,18 @@ streamlit run app.py
 ├── docs/                 # Documentación
 │   └── database-diagram.png
 ├── data.db               # Base de datos SQLite (se crea automáticamente)
+├── database/             # Módulos de base de datos
+│   ├── db_manager.py     # Gestor de base de datos
+│   ├── db_schema.py      # Esquema de base de datos
+│   └── models.py         # Modelos de datos
+├── data_loader/          # Módulos de carga de datos
+│   ├── data_loader.py    # Cargador de datos
+│   └── utils.py          # Utilidades para carga de datos
+├── menu.py               # Menú principal de la aplicación
+├── productos.py          # Módulo de productos
+├── visualization/        # Módulos de visualización
+│   ├── visualizer.py     # Visualizador de datos
+│   └── utils.py          # Utilidades para visualización
 └── .gitignore           # Archivos ignorados por Git
 ```
 
